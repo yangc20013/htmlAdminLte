@@ -1,0 +1,248 @@
+/*百分之百高，无滚动条*/
+.wrapper {
+    overflow-y: hidden;
+}
+.content-wrapper {
+    height: 0;
+}
+
+.tab-content > .tab-pane {
+    height: 100%;
+}
+
+.sidebar-toggle,
+.skin-blue .main-header .navbar .nav > li > a {
+    transition: all .5s;
+}
+
+/*tabs标签页头部*/
+.tabs_title {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: #ECF0F5;
+}
+
+.tabs_title_left,
+.tabs_title_right {
+    height: 40px;
+    line-height: 40px;
+    width: 30px;
+    text-align: center;
+    transition: all .5s;
+}
+.tabs_title_left:hover,
+.tabs_title_right:hover {
+    background-color: #d2d6de;
+    color: #357CA5;
+}
+
+.navbar-header {
+    float: right;
+}
+.navbar-collapse {
+    background-color: #3C8DBC;
+}
+.navbar-nav > li > button:hover {
+    background-color: #367FA9;
+}
+
+/*分辨率低的时候隐藏头部*/
+@media (max-width: 767px) {
+    .tabs_title {
+        display: none;
+    }
+    div.nav-tabs-custom {
+        top: 0;
+    }
+
+
+    .navbar-header {
+        float: none;
+    }
+
+}
+
+/*滚动*/
+.tabs_title_slimScroll {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+}
+
+.tabs_title_menu > li {
+    display:inline-block;
+    float: none;
+}
+
+div.tab-content {
+    height: 100%;
+    padding: 0;
+}
+
+.nav-tabs-custom {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+.tab-content iframe {
+    width: 100%;
+    height: 100%;
+    /*border: none;*/
+}
+
+
+/*tabs标签页*/
+.tabs_title_menu {
+    position: absolute;
+}
+
+.tabs_title_menu > li > a,
+.tabs_title_menu > li.active > a,
+.tabs_title_menu > li.active > a:hover,
+.tabs_title_menu > li.active > a:focus {
+    border: none;
+    color: #444;
+}
+
+.tabs_title_menu > li > a {
+    border-radius: 0;
+    padding: 0 15px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+}
+
+.nav-tabs.tabs_title_menu {
+    border: none;
+}
+
+
+/*关闭按钮*/
+.tabs-title-close {
+    width: 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.tabs_title_menu > li.active > a > .tabs-title-close,
+.tabs_title_menu > li > a:hover > .tabs-title-close {
+    display: inline-block;
+}
+
+.tabs_title_menu > li > a:hover,
+.tabs_title_menu > li.active > a {
+    padding-right: 0;
+}
+
+.tabs_title_menu > li > a.noClose:hover,
+.tabs_title_menu > li.active > a.noClose {
+    padding-right: 15px;
+}
+
+
+.tabs-title-close:hover {
+    background-color: #D2D6DE;
+}
+
+
+
+/*顶级菜单*/
+.metismenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #222D32;
+}
+
+/*所有li下的a*/
+.metismenu li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+/*顶级*/
+/*顶级li标签*/
+.metismenu > li {
+    background-color: #222D32;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+/*顶级li下的a*/
+.metismenu > li > a {
+    background-color: #222D32;
+}
+
+/*激活的顶级li*/
+.metismenu > li.active {
+    border-left: 4px solid #3C8DBC;
+    background: #293846;
+}
+
+/*鼠标滑过顶级li下的a标签*/
+.metismenu > li > a:hover {
+    background-color: #293846;
+    color: #ffffff;
+}
+
+.metismenu > li > a:hover,
+.metismenu > li > a:focus,
+.metismenu > li > a:active {
+    background-color: #293846;
+    color: #ffffff;
+}
+
+/*下级*/
+/*下级菜单*/
+.metismenu ul {
+    padding-left: 10px;
+    list-style: none;
+    background: #343a40;
+}
+
+/*!*所有li下的a*!*/
+.metismenu ul > li > a {
+    color: #ffffff;
+}
+/*鼠标滑过所有li下的a*/
+.metismenu ul > li > a:hover {
+    color: #ffffff;
+}
+
+
+.metismenu ul > li > a:hover,
+.metismenu ul > li > a:focus,
+.metismenu ul > li > a:active {
+    color: #ffffff;
+}
+.metismenu > li > a i {
+    margin-right: 6px;
+}
+/*显示小图标*/
+.sidebar-collapse .metismenu .metismenu-bigonly {
+    display: none;
+}
+
+.sidebar-collapse .metismenu > li > a {
+    height: 40px;
+}
+
+.sidebar-collapse .metismenu > li > a:after {
+    display: none;
+}
